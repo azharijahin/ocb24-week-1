@@ -8,91 +8,182 @@
 
 <style>
 
+    body {
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+
     .parent {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        border: 2px solid black;
+        background-color: #2A2C2E;
         gap: 10px;
-    
+        padding: 20px;
     }
-    .box {
-        
-       
+    .box { 
+        background-color: white;
+        border-radius: 20px;
     }
 
     .header-top {
-
-        min-width: 500px;
-        height: 100px;
-        background-color: black;
-        
-        
+        max-width: 800px;
+        height: 80px;
+        background-color: #2A2C2E; 
+        margin: auto; 
+        margin-top: 10px;
+        border-radius: 10px;
     }
-
     .header-2 {
-        background-color: yellow;
+        background-color: #F4CE47;
         height: 50px;
-        display: flex;
-        justify-content: space-evenly;
-        
+        margin-top: 20px;
+        margin-bottom: 20px;
+       text-align: center;
+       line-height: 3rem;
+    
     }
 
     li {
         display: inline;
+        font-size: 32px;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding: 10px;
+
+    }
+
+    ul {
+    
+    }
+
+    .img {
+        padding: 20px;
+        max-width: 250px;
+      
+    }
+
+    img {
+        border-radius: 20px;
+    }
+
+    .author {
+        font-family: sans-serif;
+        font-size: 12px;
+        color: #00000060;
+    }
+    .title {
+        font-family: sans-serif;
+        font-size: 16px;
+        color: #00000087;
+    }
+
+    .footer-top {
+        max-width: 800px;
+        height: 80px;
+        background-color: #2A2C2E; 
+        margin: auto; 
+        margin-top: 20px;
+    }
+
+    .footer-bot{
+        max-width: 800px;
+        height: 20px;
+        background-color: black; 
+        margin: auto; 
     }
 </style>
 <body>
-    <div class="header-top">
-
-    </div>
+    <div class="header-top"></div>
 
     <div class="header-2">
         <ul>
+            <li style="color: #F4BA30;">ALL BOOKS</li>
+            <li style="color: #F4BA30;">ALL BOOKS</li>
             <li>ALL BOOKS</li>
-            <li>ALL BOOKS</li>
-            <li>ALL BOOKS</li>
-            <li>ALL BOOKS</li>
-            <li>ALL BOOKS</li>
+            <li style="color: #F4BA30;">ALL BOOKS</li>
+            <li style="color: #F4BA30;">ALL BOOKS</li>
         </ul>
     </div>
+
     <div class="parent">
         <div class="box">
+            <div class="img">
             <img src="assets/1.png" alt="">
+            <p class="author">Adam Smith</p>
+            <p class="title">The Wealth of Nations</p>
+            </div>
         </div>  
 
-        <div class="box" style="background-color: black;">
+        <div class="box">
+            <div class="img">
             <img src="assets/2.png" alt="">
+            <p class="author">Mikhail Bulgakov</p>
+            <p class="title">Mater Margarita</p>
+            </div>
         </div> 
 
         <div class="box">
+            <div class="img">
             <img src="assets/3.png" alt="">
+            <p class="author">Alex Gilvarry</p>
+            <p class="title">From the Memoirs of a Non-Enemy Combatant</p>
+            </div>
         </div>
-
+    
         <div class="box">
+            <div class="img">
             <img src="assets/4.png" alt="">
+            <p class="author">Patrick Ness</p>
+            <p class="title">More Than This</p>
+            </div>
         </div>  
 
         <div class="box">
+            <div class="img">
             <img src="assets/5.png" alt="">
+            <p class="author">Erik Spiekermann</p>
+            <p class="title">Hello I am Erik</p>
+            </div>
         </div> 
 
         <div class="box">
+            <div class="img">
             <img src="assets/6.png" alt="">
+            <p class="author">Mario Puzo</p>
+            <p class="title">The Godfather</p>
+            </div>
         </div>
+   
 
         <div class="box">
+            <div class="img">
             <img src="assets/7.png" alt="">
+            <p class="author">Don Delillo</p>
+            <p class="title">The Names</p>
+            </div>
         </div>  
 
         <div class="box">
+            <div class="img">
             <img src="assets/8.png" alt="">
+            <p class="author">Daniel Gargallo</p>
+            <p class="title">She Beyond Sun</p>
+            </div>
         </div> 
 
         <div class="box">
+            <div class="img">
             <img src="assets/9.png" alt="">
+            <p class="author">Alan Trotter</p>
+            <p class="title">Muscle</p>
+            </div>
         </div>
 
     </div> 
+
+    <div class="footer-top"></div>
+    <div class="footer-bot"></div>
 </body>
 </html>
