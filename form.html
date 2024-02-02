@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_3</title>
+</head>
+<style>
+    * {
+        font-family: sans-serif;
+    }
+    body {
+        margin: 0;
+    }
+    .head {
+        background-color: #2A2C2E;
+        margin: 20px;
+        border-radius: 1rem;
+    }
+    .img {
+        padding: 10px 20px;
+    }
+    .main {
+        background-color: #2A2C2E;
+        margin: 20px;
+        border-radius: 1rem;
+        color: #FFFFFF;
+    }
+    .h2 {
+        display: flex;
+        flex-direction: flex-start;
+        flex-basis: auto;
+    }
+    .h2 label {
+        min-width: 200px;
+    }
+    .content {
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    input {
+        border-radius: 1rem;
+        padding: 15px;
+        
+    }
+    .input {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        flex-flow: row wrap;
+    }
+    .form1 {
+      
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px
+    }
+
+    .h3 {
+        display: flex;
+    }
+    label {
+        min-width: 150px;
+    }
+    .input input {
+        width: 600px;
+    }
+    .radio label {  
+        
+    }
+    .radio {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    #availability {
+       
+        
+    }
+
+    #online {
+        padding: 0px 10px;
+    }
+    #instore {
+        padding: 0px 10px;
+    }
+    #both {
+        padding: 0px 10px;
+    }
+    .save {
+        background-color: #F4CE47;
+        color: black;
+        border-radius: 1rem;
+        line-height: 3rem;
+        display: flex;
+        justify-content: center;
+        max-width: 790px;
+    }
+    #online {
+        accent-color: #F4CE47;
+    }
+    #instore {
+        accent-color: #F4CE47;
+    }
+    #both {
+        accent-color: #F4CE47;
+    }
+    .footer {
+        background-color: #2A2C2E;
+        padding: 20px;
+    }
+    .footer-bot {
+        background-color: black;
+        color: white;
+        display: flex;
+        
+    }
+    li {
+        display: inline-block;
+        padding-right: 20px;
+        flex-basis: 300px;
+
+    }
+    .right {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        border: 1px solid white;
+    }
+    .left {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border: 1px solid white;
+    }
+</style>
+<body>
+    <div>
+        <div class="head">
+            <div class="img">
+                <img src="assets/logo.png" alt="">
+            </div>
+        </div>
+        <div class="main">
+            <div class="content">
+                <div class="h1">
+                    <p>REGISTER YOUR BOOK</p>
+                </div>
+                <div class="h2">
+                    <div style="min-width: 130px;">Book Details</div>
+                    <div style="width: 650px;"><hr></div>
+                </div>
+                <div class="form1">
+                    <form>
+                        <div class="input">
+                            <label for="title">Title</label>
+                            <input id="title" type="text" name="title" placeholder="Your book title here. E.g. Harry Potter and The Fantastic Bootcamp">
+                        </div>
+                        <div class="input">
+                            <label for="genre">Genre</label>
+                            <input id="genre" type="text" name="genre" placeholder="Your book genre here. E.g. Fantasy">
+                        </div>
+                        <div class="input">
+                            <label for="author">Author</label>
+                            <input id="author" type="text" name="author" placeholder="Your book author here. E.g. J. K. Rowling">
+                        </div>
+                        <div class="input">
+                            <label for="publisher">Publisher</label>
+                            <input id="publisher" type="text" name="publisher" placeholder="Publisher of the book. E.g. Pustaka Melang">
+                        </div>
+                        <div class="input">
+                            <label for="year">Year Published</label>
+                            <input id="year" type="number" name="year" placeholder="1994">
+                        </div>
+                        <div class="radio">
+                            <label id="availability" for="availability">Availability</label>
+                            <input id="online" type="radio" name="availability" style="width: none;">
+                            <label id="online" for="online">Online</label>
+                            <input id="instore" type="radio" name="availability">
+                            <label id="instore" for="instore">In Store</label>
+                            <input id="both" type="radio" name="availability">
+                            <label id="both" for="both">Online & In Store</label>
+                        </div>
+                        <div class="input">
+                            <label for="page">Page</label>
+                            <input id="page" type="number" name="page" placeholder="514">
+                        </div>
+                        <div class="input">
+                            <label for="language">Language</label>
+                            <input id="language" type="text" name="language" placeholder="Language used in the book. E.g. English">
+                        </div>
+                    </form>
+                </div>
+                <div class="h3">
+                    <div style="min-width: 160px;">Registree Details</div> 
+                    <div style="width: 620px;"><hr></div>
+                </div>
+                <div class="form2">
+                    <form action="">
+                        <div class="input"> 
+                            <label for="name">Name</label>
+                            <input id="name" type="text" name="name" placeholder="Your name. E.g. Lannah Yeon">
+                        </div>
+                        <div class="input">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" name="email" placeholder="Your email. E.g. l.yeon@email.com">
+                        </div>
+                        <div class="checkbox">
+                            <input id="verify" type="checkbox" name="verify">
+                            <label for="verify">I hereby agree to follow all rules and confirmed that all details are accurate</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="save">
+                    SAVE YOUR BOOK
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <img src="assets/logo.png" alt="">
+        </div>
+        <div class="footer-bot">
+            <ul class="left">
+                <li>Terms and conditions</li>
+                <li>Privacy policy</li>
+            </ul>
+            <ul class="right">
+                <li>+44 1332 412251</li>
+                <li>support@bbookshelf.com</li>
+            </ul>
+        </div>
+     </div>
+</body>
+</html>
