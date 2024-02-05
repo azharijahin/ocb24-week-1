@@ -112,6 +112,21 @@
     .footer {
         background-color: #2A2C2E;
         padding: 20px;
+        display: flex;
+    }
+    .footer-logo {
+        display: flex;
+        flex-grow: 1;
+        justify-content: flex-start;
+    }
+    .footer-social {
+        display: flex;
+        flex-grow: 1;
+        justify-content: flex-end;
+        gap: 20px;
+        align-items: center;
+        padding: 10px 10px;
+        gap: 20px;
     }
     .footer-bot {
         background-color: black;
@@ -119,23 +134,25 @@
         display: flex;
         
     }
-    li {
-        display: inline-block;
-        padding-right: 20px;
-        flex-basis: 300px;
-
-    }
     .right {
         display: flex;
-        justify-content: flex-end;
+        justify-content:flex-end;
         align-items: center;
-        border: 1px solid white;
+        flex-grow: 1;
+        padding: 10px 20px;
+        gap: 20px;
     }
     .left {
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        border: 1px solid white;
+        flex-grow: 1;
+        padding: 10px 20px;
+        gap: 20px;
+    }
+    button {
+        all: unset;
+        cursor: pointer;
     }
 </style>
 <body>
@@ -178,12 +195,18 @@
                         </div>
                         <div class="radio">
                             <label id="availability" for="availability">Availability</label>
-                            <input id="online" type="radio" name="availability" style="width: none;">
-                            <label id="online" for="online">Online</label>
-                            <input id="instore" type="radio" name="availability">
-                            <label id="instore" for="instore">In Store</label>
-                            <input id="both" type="radio" name="availability">
-                            <label id="both" for="both">Online & In Store</label>
+                            <div class="radio-online">
+                                <input id="online" type="radio" name="availability" style="width: none;">
+                                <label id="online" for="online">Online</label>
+                            </div>
+                            <div class="radio-instore">
+                                <input id="instore" type="radio" name="availability">
+                                <label id="instore" for="instore">In Store</label>
+                            </div>
+                            <div class="radio-both">
+                                <input id="both" type="radio" name="availability">
+                                <label id="both" for="both">Online & In Store</label>
+                            </div>
                         </div>
                         <div class="input">
                             <label for="page">Page</label>
@@ -216,22 +239,27 @@
                     </form>
                 </div>
                 <div class="save">
-                    SAVE YOUR BOOK
+                    <button>SAVE YOUR BOOK</button>
                 </div>
             </div>
         </div>
         <div class="footer">
-            <img src="assets/logo.png" alt="">
+            <div class="footer-logo"><img src="assets/logo.png" alt=""></div>
+            <div class="footer-social">
+                <img src="assets/ig.png" alt="" style="width: 20px; height: 20px;">
+                <img src="assets/fb.png" alt="" style="width: 25px; height: 25px;">
+                <img src="assets/twitter.png" alt="" style="width: 25px; height: 25px;">
+            </div>
         </div>
         <div class="footer-bot">
-            <ul class="left">
-                <li>Terms and conditions</li>
-                <li>Privacy policy</li>
-            </ul>
-            <ul class="right">
-                <li>+44 1332 412251</li>
-                <li>support@bbookshelf.com</li>
-            </ul>
+            <div class="left">
+                <div>Terms and conditions</div>
+                <div>Privacy policy</div>
+            </div>
+            <div class="right">
+                <div>+44 1332 412251</div>
+                <div>support@bbookshelf.com</div>
+            </div>
         </div>
      </div>
 </body>

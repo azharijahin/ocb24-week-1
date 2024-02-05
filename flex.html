@@ -3,47 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flex</title>
-
-    <style>
-
-        * {
-            padding: 20px;
-        }
-
-        .box-parent {
-            background-color: black;
-            width: 600px;
-            height: 600px;
-            display: flex;
-            flex-wrap: wrap;
-        
-        }
-
-        .box-1 {
-            background-color: blue;
-            width: 200px;
-            height: 200px;
-        }
-
-        .box-2 {
-            background-color: red;
-            width: 200px;
-            height: 200px;
-        }
-
-        .box-3 {
-            background-color: green;
-            width: 200px;
-            height: 200px;
-        }
-    </style>
+    <title>Flex Mentorship</title>
 </head>
+
+<style>
+    body {
+        background-color: black;
+        color: white;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    div {
+        border: 1px solid white;
+    }
+
+    .header {
+        display: flex;
+    }
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main-card {
+        flex-grow: 1;
+        flex-basis: calc(100% / 4);
+    }
+    .footer {
+        
+    }
+</style>
 <body>
-    <div class="box-parent">
-        <div class="box-1"></div>
-        <div class="box-2"></div>
-        <div class="box-3"></div>
+    <div class="header">
+        <div class="header-logo">Logo</div>
+        <div class="header-nav">Nav</div>
+        <div class="header-login">login</div>
+    </div>
+
+    <div class="banner">
+        Banner
+    </div>
+
+    <div class="main">
+        <div class="main-card">Card</div>
+        <div class="main-card">Card</div>
+        <div class="main-card">Card</div>
+        <div class="main-card">Card</div>
+        <div class="main-card">Card</div>
+        <div class="main-card">Card</div>
+        <div class="main-card">Card</div>
+        <div class="main-card">Card</div>
+        <div class="main-card">Card</div>
+        
+    </div>
+
+    <div class="footer">
+        Footer
     </div>
 </body>
 </html>
